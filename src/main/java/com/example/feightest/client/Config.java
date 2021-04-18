@@ -1,6 +1,7 @@
 package com.example.feightest.client;
 
 import feign.Logger;
+import feign.codec.Decoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,4 +13,11 @@ public class Config {
     Logger.Level feignLoggerLevel() {
         return Logger.Level.FULL;
     }
+
+    /** feign custom decoder */
+    @Bean
+    Decoder feignDecoder(){
+        return new ADriveDecoder();
+    }
+
 }

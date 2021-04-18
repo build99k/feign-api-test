@@ -3,7 +3,6 @@ package com.example.feigntest2.controller;
 import com.example.feigntest2.dto.Contributor;
 import com.example.feigntest2.dto.Issue;
 import com.example.feigntest2.service.GitHubService;
-import org.hamcrest.core.Is;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
