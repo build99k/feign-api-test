@@ -1,6 +1,5 @@
 package com.example.feightest.client;
 
-import feign.Feign;
 import feign.FeignException;
 import feign.Response;
 import feign.codec.DecodeException;
@@ -21,6 +20,7 @@ public class ADriveDecoder implements Decoder {
     public Object decode(Response response, Type type) throws IOException, DecodeException, FeignException {
         //이상없음
         if(response.status() == 200){
+
             log.info("===============응답 200 정상===============");
 
             log.info("============Type 정보 -> ");
@@ -28,6 +28,7 @@ public class ADriveDecoder implements Decoder {
 
             log.info("============Header 정보 -> ");
             log.info(response.headers().toString());
+            log.info(response.reason().toString());
 
         }else{
             log.info("===============응답 확인필요" + String.valueOf(response.status()) + "===============");
