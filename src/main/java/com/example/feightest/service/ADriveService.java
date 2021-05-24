@@ -30,7 +30,7 @@ public class ADriveService {
         log.info(String.valueOf(rpContact.status()));
         log.info(rpContact.headers().toString());
         log.info(rpContact.body().toString());
-
+        log.info(rpContact.headers().toString());
         return rpContact.body().toString();
     }
 
