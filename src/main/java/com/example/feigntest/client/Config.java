@@ -1,4 +1,4 @@
-package com.example.feightest.client;
+package com.example.feigntest.client;
 
 import feign.Logger;
 import feign.codec.Decoder;
@@ -17,7 +17,6 @@ public class Config {
     /** feign custom decoder */
     @Bean
     Decoder feignDecoder(){
-        return new ADriveDecoder();
+        return new GithubDecoder();
     }
-
 }

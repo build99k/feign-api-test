@@ -1,6 +1,6 @@
 package com.example.feigntest2.controller;
 
-import com.example.feigntest2.dto.Contributor;
+import com.example.feigntest.dto.Contributor;
 import com.example.feigntest2.dto.Issue;
 import com.example.feigntest2.service.GitHubService;
 import org.springframework.beans.factory.annotation.Autowired;

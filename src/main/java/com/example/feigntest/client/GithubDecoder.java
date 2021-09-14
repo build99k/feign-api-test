@@ -1,4 +1,4 @@
-package com.example.feightest.client;
+package com.example.feigntest.client;
 
 import feign.FeignException;
 import feign.Response;
@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 
 @Slf4j
-public class ADriveDecoder implements Decoder {
+public class GithubDecoder implements Decoder {
 
     /** 커스텀 디코드 함수
      *  헤더 체크가 필요하거나 리턴 데이터 파싱시 특정 로직을 추가하고 싶은경우 사용.

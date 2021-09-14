@@ -1,7 +1,7 @@
 package com.example.feigntest2.service;
 
 import com.example.feigntest2.client.GitHubClient;
-import com.example.feigntest2.dto.Contributor;
+import com.example.feigntest.dto.Contributor;
 import com.example.feigntest2.dto.Issue;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

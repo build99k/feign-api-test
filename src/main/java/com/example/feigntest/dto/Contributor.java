@@ -1,4 +1,4 @@
-package com.example.feigntest2.dto;
+package com.example.feigntest.dto;
 
 import lombok.Data;
 
