@@ -28,16 +28,6 @@ public class GithubDecoder implements Decoder {
 
             log.info("============Header 정보 -> ");
             log.info(response.headers().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
-            log.info(response.reason().toString());
 
         }else{
             log.info("===============응답 확인필요" + String.valueOf(response.status()) + "===============");
